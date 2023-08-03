@@ -1,15 +1,16 @@
 description: |
   The Continuous Build feedback loop iterates between the Develop and Build phases of the
-  DevSecOps lifecycle. If build does not complete successfully, then the commit must be sent back 
-  to the submitting engineer to fix; without a successful build, further steps are both illogical 
+  DevSecOps lifecycle. If build does not complete successfully, then the commit must be sent back
+  to the submitting engineer to fix; without a successful build, further steps are both illogical
   and impossible to complete, thus the importance of this feedback loop.
 
-version: 2.1
+usage:
+  version: 2.1
 
-orbs:
-  devops: cwagne17/orb@0.0.1
+  orbs:
+    devops: cwagne17/orb@0.0.1
 
-workflows:
-  continuous-build:
-    jobs:
-      - devops/build
+  workflows:
+    continuous-build:
+      jobs:
+        - devops/build
