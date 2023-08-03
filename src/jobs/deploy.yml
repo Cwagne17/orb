@@ -3,3 +3,12 @@ description: |
   fashion." This job is TBD as the deployment is dependent on the scenario of the architecure.
   This job will remain not implemented but included to represent the whole lifecycle of the DevSecOps
   lifecycle.
+
+executor:
+  machine: docker/machine
+
+steps:
+  - run:
+      name: Message
+      command: |
+        echo 'job not yet implemented.'

@@ -8,4 +8,4 @@ display:
   source_url: "https://github.com/Cwagne17/orb"
 
 orbs:
-  gh: circleci/github-cli@2.2.0
+  docker: circleci/docker@2.2.0
