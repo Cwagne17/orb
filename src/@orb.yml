@@ -1,0 +1,11 @@
+version: 2.1
+
+description: >
+  This is an orb that is actively maintained by myself for personal projects.
+  This orb should be considered experimental to all who decide to use it.
+
+display:
+  source_url: "https://github.com/Cwagne17/orb"
+
+orbs:
+  gh: circleci/github-cli@2.2.0
