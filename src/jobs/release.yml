@@ -1,0 +1,16 @@
+description: |
+  The release job represents the steps for the 'Release & Deliver' phase of the DevSecOps software lifecycle.
+  Release and delivery does not mean pushed into production nessecarily. Rather the artifact is tagged with a 
+  version within the source code configuration management tool and deployed into an artifact repository.
+  For more information check out DoD Cyber Exchange's DoDEnterpriseDevSecOpsFundamentals.pdf.
+
+  This job specifically supports GitHub as the VCS and DockerHub as the artifact repository. There are two types
+  of releases supported by the release job; pre-release, stable release (release).
+
+  For the pre-release flow, the GitHub release will be marked as pre-release. The only validation is that the
+  version being used is a unique tag. After a successful GitHub release, the docker image will be tagged and pushed.
+  The docker image is not built in the release job. With this in mind, ensure that the release job requires a
+  previous build job.
+
+  For the stable release flow, the GitHub release will be updated as a stable release. After successfully updating the GitHub release,
+  the docker image will be promoted from the version to latest.

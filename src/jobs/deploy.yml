@@ -1,0 +1,5 @@
+description: |
+  "Deployment is formally the act of pushing one or more features into production in an automated
+  fashion." This job is TBD as the deployment is dependent on the scenario of the architecure.
+  This job will remain not implemented but included to represent the whole lifecycle of the DevSecOps
+  lifecycle.

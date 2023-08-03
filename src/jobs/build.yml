@@ -1,0 +1,7 @@
+description: |
+  The build job uses docker as the build tool to enforce feedback loops until
+  successful builds are being achieved. The docker build job will be tagged
+  with the SHA1 that represents the latest commit being built with.
+
+  The final step of this job will persist the image's tar file to the workspace
+  to be used by subsequent jobs.
