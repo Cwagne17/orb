@@ -4,8 +4,7 @@ description: |
   This job will remain not implemented but included to represent the whole lifecycle of the DevSecOps
   lifecycle.
 
-executor:
-  machine: docker/machine
+executor: docker/machine
 
 steps:
   - run:

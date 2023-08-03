@@ -6,8 +6,7 @@ description: |
   The final step of this job will persist the image's tar file to the workspace
   to be used by subsequent jobs.
 
-executor:
-  machine: docker/machine
+executor: docker/machine
 
 steps:
   - run:

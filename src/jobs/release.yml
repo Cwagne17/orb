@@ -15,8 +15,7 @@ description: |
   For the stable release flow, the GitHub release will be updated as a stable release. After successfully updating the GitHub release,
   the docker image will be promoted from the version to latest.
 
-executor:
-  machine: docker/machine
+executor: docker/machine
 
 steps:
   - run:
